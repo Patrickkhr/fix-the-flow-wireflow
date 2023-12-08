@@ -94,9 +94,6 @@ p {
     margin: revert;
 } */
 
-p {
-    margin: revert;
-}
 
 .centered {
     text-align: center;
@@ -595,6 +592,75 @@ select option {
     max-width: 400px;
     height: auto;
 }
+
+.resultWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    position: relative;
+}
+
+.singleResult {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--quaternary--color);
+    border-radius: var(--button-radius);
+    height: auto;
+    width: auto;
+    padding: var(--primary-space);
+    gap: var(--primary-space);
+    position: relative;
+}
+
+.boekimg {
+    min-width: 100px;
+    width: 100%;
+    height: 200px;
+    border-radius: var(--button-radius);
+}
+
+.selectButton {
+    width: 100%;
+    margin-top: var(--primary-space);
+}
+
+.likeButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: var(--primary-space);
+}
+
+.liked {
+    color: red;
+    transition: all .5s ease-out;
+}
+
+
+
+/* andere view 
+ 
+    .boekContainer {
+        display: flex;
+        background-color: var(--quaternary--color);
+        border-radius: var(--button-radius);
+        height: auto;
+        width: auto;
+        padding: var(--primary-space);
+        gap: var(--primary-space);
+        position: relative;
+    }
+
+    .boekimg {
+        width: auto;
+        height: 200px;
+        border-radius: var(--button-radius);
+    }
+}
+
+*/
+
 
 /* End page: Welkom/Home */
 

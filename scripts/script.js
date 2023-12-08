@@ -12,3 +12,8 @@ searchBtn.addEventListener("click", () => {
     sidebar.classList.remove("close");
 })
 
+const likeButton = document.querySelector('.likeButton')
+
+likeButton.addEventListener("click", function() {
+    likeButton.classList.toggle('liked')
+})

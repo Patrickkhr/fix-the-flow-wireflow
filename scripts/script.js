@@ -12,8 +12,12 @@ searchBtn.addEventListener("click", () => {
     sidebar.classList.remove("close");
 })
 
-const likeButton = document.querySelector('.likeButton')
+const likeButtons = document.querySelectorAll('.likeButton')
 
-likeButton.addEventListener("click", function() {
-    likeButton.classList.toggle('liked')
+likeButtons.forEach(likeButton => {
+    likeButton.addEventListener("click", function() {
+        likeButton.classList.toggle('liked')
+    })
 })
+
+

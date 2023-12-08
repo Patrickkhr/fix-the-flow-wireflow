@@ -12,10 +12,13 @@ searchBtn.addEventListener("click", () => {
     sidebar.classList.remove("close");
 })
 
+// Button element selecteren
 const likeButtons = document.querySelectorAll('.likeButton')
 
+// Door elke button mappen om te zien welke er geklikt is
 likeButtons.forEach(likeButton => {
     likeButton.addEventListener("click", function() {
+        // Bij de geklikte button de class "liked" toevoegen
         likeButton.classList.toggle('liked')
     })
 })

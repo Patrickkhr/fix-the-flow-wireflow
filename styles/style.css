@@ -584,7 +584,7 @@ select option {
 /* Start page: Welkom/Home */
 
 .searchContainer {
-    margin-block: var(--secondary-space);
+    margin-top: var(--secondary-space);
 }
 
 .banner {
@@ -598,6 +598,11 @@ select option {
     flex-wrap: wrap;
     gap: 1em;
     position: relative;
+    margin-bottom: var(--secondary-space);
+}
+
+.resultatenContainer {
+    margin-top: var(--primary-space);
 }
 
 .singleResult {
